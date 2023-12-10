@@ -1,12 +1,13 @@
 from Bio.Align.Applications import ClustalOmegaCommandline
-from Bio import AlignIO
+from Bio import AlignIO, Phylo
+from Bio.Phylo import Consensus, TreeConstruction
 from Bio.Phylo.TreeConstruction import DistanceCalculator, DistanceTreeConstructor
-from Bio import Phylo
 from matplotlib import pyplot as plt
 import io
 
 # Set this to the absolute path of your clustalo.exe
 CLUSTAL_PATH = "C:/Users/price/PycharmProjects/CS_123A_Project/Clustal_Windows/clustalo.exe"
+TREES_MADE_PER_CONSENSUS = 10
 
 
 # Perform MSA using Clustal Omega
@@ -16,31 +17,42 @@ def perform_msa(input_file, output_file):
     stdout, stderr = clustalomega_cline()
 
 
-# Calculate Distance Matrix from Aligned Sequences
-def calculate_distance_matrix(aligned_sequences_file):
+# Retrieve alignment from given file
+def create_alignment(aligned_sequences_file):
     alignment = AlignIO.read(aligned_sequences_file, "fasta")
+    return alignment
+
+
+# Calculate Distance Matrix from Aligned Sequences
+def calculate_distance_matrix(alignment):
     calculator = DistanceCalculator('identity')
     distance_matrix = calculator.get_distance(alignment)
     return distance_matrix
 
 
 # Construct Phylogenetic Tree
-def construct_tree(distance_matrix, algorithm='upgma'):
-    constructor = DistanceTreeConstructor()
+def construct_tree(alignment, distance_matrix, algorithm='upgma'):
+    calculator = DistanceCalculator('identity')
     if algorithm.lower() == 'upgma':
-        tree = constructor.upgma(distance_matrix)
+        x = TreeConstruction.DistanceTreeConstructor(distance_calculator=calculator, method='upgma')
+        tree_collection = Consensus.bootstrap_trees(alignment, TREES_MADE_PER_CONSENSUS, x)
+        tree = Consensus.majority_consensus(tree_collection)
+        clade_nums = []
+        for clade in tree.find_clades():
+            if clade.confidence is not None:
+                clade_nums.append(clade.confidence)
+
     elif algorithm.lower() == 'nj':
-        tree = constructor.nj(distance_matrix)
+        x = TreeConstruction.DistanceTreeConstructor(distance_calculator=calculator, method='nj')
+        tree_collection = Consensus.bootstrap_trees(alignment, TREES_MADE_PER_CONSENSUS, x)
+        tree = Consensus.majority_consensus(tree_collection)
+        clade_nums = []
+        for clade in tree.find_clades():
+            if clade.confidence is not None:
+                clade_nums.append(clade.confidence)
     else:
         raise ValueError("Unsupported algorithm. Please choose either 'upgma' or 'nj'.")
     return tree
-
-
-# Output tree in Newick Format
-def tree_to_newick(tree):
-    newick_io = io.StringIO()
-    Phylo.write(tree, newick_io, 'newick')
-    return newick_io.getvalue().strip()
 
 
 # Replace 'input_sequences.fasta' with your actual input file containing the sequences
@@ -48,27 +60,18 @@ input_sequences_file = 'sampleseq.txt'
 aligned_sequences_file = 'outseq7.txt'
 
 # Step 1: Perform MSA
-perform_msa(input_sequences_file, aligned_sequences_file)
+# perform_msa(input_sequences_file, aligned_sequences_file)
 
 # Step 2: Calculate the distance matrix
-distance_matrix = calculate_distance_matrix(aligned_sequences_file)
-print(distance_matrix)
+alignment = create_alignment('outseq7.txt')
+distance_matrix = calculate_distance_matrix(alignment)
+print(distance_matrix, "\n")
 
 # Step 3: Construct the UPGMA tree
-upgma_tree = construct_tree(distance_matrix, 'upgma')
+upgma_tree = construct_tree(alignment, distance_matrix, 'upgma')
 
 # Step 4: Construct the NJ tree
-nj_tree = construct_tree(distance_matrix, 'nj')
-
-# Convert trees to Newick Format
-upgma_newick = tree_to_newick(upgma_tree)
-nj_newick = tree_to_newick(nj_tree)
-
-# Output the results
-print("UPGMA Tree in Newick Format:")
-print(upgma_newick)
-print("\nNJ Tree in Newick Format:")
-print(nj_newick)
+nj_tree = construct_tree(alignment, distance_matrix, 'nj')
 
 print("UPGMA Tree:")
 Phylo.draw_ascii(upgma_tree)

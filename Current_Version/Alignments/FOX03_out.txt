@@ -1,4 +1,4 @@
->Humans, BC068552.1 Homo sapiens forkhead box O3, mRNA (cDNA clone MGC:87459 IMAGE:30347471), complete cds
+>Humans BC068552.1 Homo sapiens forkhead box O3, mRNA (cDNA clone MGC:87459 IMAGE:30347471), complete cds
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -182,7 +182,7 @@ AGAAAGAAAAGGAAAAAAAAAAAA--------AAAA------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Mouse, NM_001376967.1 Mus musculus forkhead box O3 (Foxo3), transcript variant 1, mRNA
+>Mouse NM_001376967.1 Mus musculus forkhead box O3 (Foxo3), transcript variant 1, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -366,7 +366,7 @@ GACGCATGTAAATAAAGCTTTGGTGACACTCTA---------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Chicken, MK861853.1 Gallus gallus breed Xinghua forkhead box O3 (FOXO3) mRNA, complete cds
+>Chicken MK861853.1 Gallus gallus breed Xinghua forkhead box O3 (FOXO3) mRNA, complete cds
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -550,7 +550,7 @@ AGATGGTGACG---CATGTAAATAAAGCATAATGGATCTCTACATTG-----CA------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Hydra, JX118843.1 Hydra vulgaris FoxO transcription factor mRNA, complete cds
+>Hydra JX118843.1 Hydra vulgaris FoxO transcription factor mRNA, complete cds
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -734,7 +734,7 @@ TTAAATAAAGTGTGGTGTCAT---------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Fruitfly, NM_001316497.1 Drosophila melanogaster forkhead box, sub-group O (foxo), transcript variant H, mRNA
+>Fruitfly NM_001316497.1 Drosophila melanogaster forkhead box, sub-group O (foxo), transcript variant H, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -918,7 +918,7 @@ AAAATGC--AAAAACGGAGTGAAGATGAATAAACTGATGATTCAATATAAGAATT-----
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Roundworm, AF020344.1 Caenorhabditis elegans fork head-related transcription factor DAF-16b (daf-16) mRNA, complete cds
+>Roundworm AF020344.1 Caenorhabditis elegans fork head-related transcription factor DAF-16b (daf-16) mRNA, complete cds
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1102,7 +1102,7 @@ AC-ACACACATAGTAAT--------CTACCTCCAAAATTTTACTGAAAGATGTGATC---
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Pig, AB433530.1 Sus scrofa FOXO3 mRNA for forkhead box O3, complete cds
+>Pig AB433530.1 Sus scrofa FOXO3 mRNA for forkhead box O3, complete cds
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1286,7 +1286,7 @@ ACACAGAACGTTGTTGGTTTGAACGTGGGGAGCTTCACTGGTGCTAAGCAGGCCTCATCT
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Dog, XM_038684315.1 PREDICTED: Canis lupus familiaris forkhead box O3 (FOXO3), mRNA
+>Dog XM_038684315.1 PREDICTED: Canis lupus familiaris forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1470,7 +1470,7 @@ GACGCATGTAAATAAAGCATCAGTGACACTCTG---------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Sheep, JQ896626.1 Ovis aries forkhead box O3 (FOXO3) mRNA, complete cds
+>Sheep JQ896626.1 Ovis aries forkhead box O3 (FOXO3) mRNA, complete cds
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1654,7 +1654,7 @@ ACACAGAATGTTGTTGGTTTGAACGTGGGGAGCTTCACTGGTGCTAAGCAGGCCTCATCT
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Dolphin, XM_033867605.1 PREDICTED: Tursiops truncatus forkhead box O3 (FOXO3), transcript variant X4, mRNA
+>Dolphin XM_033867605.1 PREDICTED: Tursiops truncatus forkhead box O3 (FOXO3), transcript variant X4, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1838,7 +1838,7 @@ A-----------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Chimpanzee, GABE01001587.1 TSA: Pan troglodytes Chimpanzee_0112565 mRNA sequence
+>Chimpanzee GABE01001587.1 TSA: Pan troglodytes Chimpanzee_0112565 mRNA sequence
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -2022,7 +2022,7 @@ GAAACCCCGTCNNNAAA-AATACAAA----AATTTGCTG---------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Seal, XM_032408118.1 PREDICTED: Phoca vitulina forkhead box O3 (FOXO3), transcript variant X3, mRNA
+>Seal XM_032408118.1 PREDICTED: Phoca vitulina forkhead box O3 (FOXO3), transcript variant X3, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -2206,7 +2206,7 @@ GACGCATGTAAATAAAGCATCCGTGACACTCTG---------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Rhesus monkey, XM_001093593.4 PREDICTED: Macaca mulatta forkhead box O3 (FOXO3), mRNA
+>Rhesus_monkey XM_001093593.4 PREDICTED: Macaca mulatta forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -2390,7 +2390,7 @@ GACGCATGTAAATAAAGCATCAGTGA----------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Blue Whale, XM_036871463.1 PREDICTED: Balaenoptera musculus forkhead box O3 (FOXO3), transcript variant X8, mRNA
+>Blue_Whale XM_036871463.1 PREDICTED: Balaenoptera musculus forkhead box O3 (FOXO3), transcript variant X8, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -2574,7 +2574,7 @@ TTGGTTGCATTGGGTC--------------------TTTGTTGCTG--------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Rat, XM_032888498.1 PREDICTED: Rattus rattus forkhead box O3 (Foxo3), transcript variant X2, mRNA
+>Rat XM_032888498.1 PREDICTED: Rattus rattus forkhead box O3 (Foxo3), transcript variant X2, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -2758,7 +2758,7 @@ GCA--CAACTGTTTGTCCTGC---------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Cat, XM_003986453.6 PREDICTED: Felis catus forkhead box O3 (FOXO3), mRNA
+>Cat XM_003986453.6 PREDICTED: Felis catus forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -2942,7 +2942,7 @@ GACGCATGTAAATAAAGCATCAGTGACACTC-----------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Panda, XM_034668952.1 PREDICTED: Ailuropoda melanoleuca forkhead box O3 (FOXO3), transcript variant X2, mRNA
+>Panda XM_034668952.1 PREDICTED: Ailuropoda melanoleuca forkhead box O3 (FOXO3), transcript variant X2, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -3126,7 +3126,7 @@ GACGCATGTAAATAAAGCATCAGTGACACTC-----------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Crow, XM_032101418.1 PREDICTED: Corvus moneduloides forkhead box O3 (FOXO3), transcript variant X2, mRNA
+>Crow XM_032101418.1 PREDICTED: Corvus moneduloides forkhead box O3 (FOXO3), transcript variant X2, mRNA
 ------------------------------------------------------------
 -------------TGCGGTTTGGTTGAAGCTCCCTGCGTGTGTCTATAACTTTGTG----
 TTGCTGCCGGTGGTTGTTAGGAGGAGGGATGTGGAAGTCGGTGGTGAGCAGGGTGACAGG
@@ -3310,7 +3310,7 @@ ACATCTCTGATGAAAAAAA---------------------A-------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Black Swan, XM_035564797.2 PREDICTED: Cygnus atratus forkhead box O3 (FOXO3), mRNA
+>Black_Swan XM_035564797.2 PREDICTED: Cygnus atratus forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -3494,7 +3494,7 @@ GCTGTATAGATCCTC---------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Sea turtle (green), XM_037894590.2 PREDICTED: Chelonia mydas forkhead box O3 (FOXO3), transcript variant X1, mRNA
+>Sea_turtle_(green) XM_037894590.2 PREDICTED: Chelonia mydas forkhead box O3 (FOXO3), transcript variant X1, mRNA
 ------------------------------------------------------------
 ------------------------------------CGTGCGTCTATAACTTTGTGTTGC
 TTGCTGCTGCTGGTGGTTAGGAGAAGGAATGTGGAAGTCAGTAGAGTGCAGGGTGACAGG
@@ -3678,7 +3678,7 @@ GCCGCATGTAAATAAAGCATAATGGATCTCTA----------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Duck, XM_035320591.1 PREDICTED: Oxyura jamaicensis forkhead box O3 (FOXO3), mRNA
+>Duck XM_035320591.1 PREDICTED: Oxyura jamaicensis forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -3862,7 +3862,7 @@ ATCAACTCTTCCAAGCAGCCAAGGGTTTACCACTCCCTTTTTCTTTTTTTTT--------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Lizard, XM_035109282.1 PREDICTED: Zootoca vivipara forkhead box O3 (FOXO3), mRNA
+>Lizard XM_035109282.1 PREDICTED: Zootoca vivipara forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 --------------------------GAATGTGGAAGTCAGCAGAGCGGAGGGCGGCGGG
@@ -4046,7 +4046,7 @@ TTCCTAACAAAACAGAGACTGTT-------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Rattlesnake, XM_039351148.1 PREDICTED: Crotalus tigris forkhead box O3 (FOXO3), transcript variant X2, mRNA
+>Rattlesnake XM_039351148.1 PREDICTED: Crotalus tigris forkhead box O3 (FOXO3), transcript variant X2, mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -4230,7 +4230,7 @@ TGAAACCAAATGCTGACATAGGTGAATATACTACCTTACTACATAACAATTGGATGTCAG
 TTTGATTTGGAAATCTTTCCCTTTTGCAAATGAAATAGTGGTGCAGAGCTTAACTCCACT
 TGATGTTAGTAGATATTGCCTTGTGTACTCCATTCTCAACGGTAATCTAGTTTGTAAAAT
 AAAGTGTGATGCATGTAAATAAAGCATAATGGATCTCTATGCTGAAA
->Giant tortoise, XM_032773308.1 PREDICTED: Chelonoidis abingdonii forkhead box O3 (FOXO3), mRNA
+>Giant_tortoise XM_032773308.1 PREDICTED: Chelonoidis abingdonii forkhead box O3 (FOXO3), mRNA
 TAGTCTGGAAACTTGCCCCCCTGCTTGCGGCTTAGATCATCAGCCCTCCCTGTGGGCGGA
 GACAAGGCTGCTGTATGGTTCGGTTGAGTCGCGCTGCGTGCGCCTATAACTTTGTGTTGC
 TTGCTGCTGCTGGTGGATAGGAGAAGGAATGTGGAAGTCAGTAGAGTGCAGGGTGACAGG
@@ -4414,7 +4414,7 @@ TCAGCAAGTGGACAGTGATA-CCGTTTACAGCT---------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Rabbit, XM_051854457.1 PREDICTED: Oryctolagus cuniculus forkhead box O3 (FOXO3), mRNA
+>Rabbit XM_051854457.1 PREDICTED: Oryctolagus cuniculus forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -4598,7 +4598,7 @@ GACGCATGTAAATAAAGCATCAATGACACTCTA---------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Cow, NM_001206083.1 Bos taurus forkhead box O3 (FOXO3), mRNA
+>Cow NM_001206083.1 Bos taurus forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -4782,7 +4782,7 @@ ACACAGAACGTTGTTGGTTTGAACGTGGGGAGCTTCACTGGTGCTAAGCAGGCCTCATCT
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Camel, XM_032484644.1 PREDICTED: Camelus ferus forkhead box O3 (FOXO3), mRNA
+>Camel XM_032484644.1 PREDICTED: Camelus ferus forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -4966,7 +4966,7 @@ A-----------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 -----------------------------------------------
->Horse, XM_023650882.1 PREDICTED: Equus caballus forkhead box O3 (FOXO3), mRNA
+>Horse XM_023650882.1 PREDICTED: Equus caballus forkhead box O3 (FOXO3), mRNA
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------

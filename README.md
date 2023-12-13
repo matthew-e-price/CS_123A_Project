@@ -33,3 +33,8 @@
     - After the program finishes, you will be shown a table of statistics
     - The produced trees will be stored in the directory "Trees"
     - The table will be stored in the directory "Results"
+
+## Potential matplotlib Issue with PyCharm
+If you get an error when running phylo_main.py where there "is no attribute 'FigureCanvas'", then use the following fix
+- Go to File | Settings | Tools | Python Scientific
+- Disable the option "Show plots in tools window"

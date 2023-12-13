@@ -1,3 +1,5 @@
+# Class is written by Matthew Price
+
 from matplotlib import pyplot as plt
 import phylo_wrk
 

@@ -6,6 +6,7 @@ from Bio.Phylo.TreeConstruction import DistanceCalculator, DistanceTreeConstruct
 from matplotlib import pyplot as plt
 
 
+# Written by Rucha Deo
 # Perform MSA using Clustal Omega
 def perform_msa(input_file, output_file, clustal_path):
     clustalomega_cline = ClustalOmegaCommandline(infile=input_file, outfile=output_file, verbose=True,
@@ -13,12 +14,14 @@ def perform_msa(input_file, output_file, clustal_path):
     stdout, stderr = clustalomega_cline()
 
 
+# Written by Rucha Deo and Matthew Price
 # Retrieve alignment from given file
 def create_alignment(aligned_sequences_file):
     alignment = AlignIO.read(aligned_sequences_file, "fasta")
     return alignment
 
 
+# Written by Rucha Deo
 # Calculate Distance Matrix from Aligned Sequences
 def calculate_distance_matrix(alignment):
     calculator = DistanceCalculator('identity')
@@ -26,6 +29,7 @@ def calculate_distance_matrix(alignment):
     return distance_matrix
 
 
+# Written by Rucha Deo
 # Construct Phylogenetic Tree
 def construct_tree(distance_matrix, algorithm='upgma'):
     constructor = DistanceTreeConstructor()
@@ -38,6 +42,7 @@ def construct_tree(distance_matrix, algorithm='upgma'):
     return tree
 
 
+# Written by Matthew Price
 # Compare generated tree to bootstrap trees
 def compare_to_bootstrap(tree, tree_count, alignment, algorithm="upgma"):
     calculator = DistanceCalculator('identity')
@@ -58,6 +63,8 @@ def compare_to_bootstrap(tree, tree_count, alignment, algorithm="upgma"):
     return new_tree
 
 
+# Written by Matthew Price
+# Obtain the average of branch confidence levels
 def average_confidence(tree):
     clade_nums = []
     confidence = 0
@@ -70,6 +77,8 @@ def average_confidence(tree):
     return confidence / len(clade_nums)
 
 
+# Written by Matthew Price
+# Draw, save, and close a drawing of the phylo tree
 def draw_tree(tree, file, algorithm="upgma"):
     if algorithm.lower() == 'upgma':
         fig = plt.figure(figsize=(15, 8), dpi=100)
@@ -95,6 +104,8 @@ def draw_tree(tree, file, algorithm="upgma"):
         raise ValueError("Unsupported algorithm. Please choose either 'upgma' or 'nj'.")
 
 
+# Written by Matthew Price
+# Tests for a correct UPGMA tree, currently unused because the generated UPGMA tree should always be correct
 def upgma_test_correct(tree):
     for a in tree.get_terminals():
         for b in tree.get_terminals():
@@ -109,6 +120,8 @@ def upgma_test_correct(tree):
     return True
 
 
+# Written by Rucha Deo and Matthew Price
+# The main function that creates trees by using all other functions
 def make_trees(input, bootstrap_trees, use_cline, clustal_path):
     # Replace 'input_sequences.fasta' with your actual input file containing the sequences
     input_sequences_file = "Sequences/" + input

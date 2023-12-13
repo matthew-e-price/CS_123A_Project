@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-import phylo
+import phylo_wrk
 
 
 def main():
@@ -8,31 +8,31 @@ def main():
     stats = []
 
     # Test 1
-    result = phylo.make_trees("FOX03.txt", "FOX03_out.txt")
+    result = phylo_wrk.make_trees("FOX03.txt")
     stats.append([result["upgma_time"], result["upgma_confidence"], result["nj_time"], result["nj_confidence"]])
 
     # Test 2
-    result = phylo.make_trees("MLH1_gene_animals.txt", "MLH1_gene_animals_out.txt")
+    result = phylo_wrk.make_trees("MLH1_gene_animals.txt")
     stats.append([result["upgma_time"], result["upgma_confidence"], result["nj_time"], result["nj_confidence"]])
 
     # Test 3
-    result = phylo.make_trees("MLH1_gene_plants.txt", "MLH1_gene_plants_out.txt")
+    result = phylo_wrk.make_trees("MLH1_gene_plants.txt")
     stats.append([result["upgma_time"], result["upgma_confidence"], result["nj_time"], result["nj_confidence"]])
 
     # Test 4
-    result = phylo.make_trees("MLH1_gene_both.txt", "MLH1_gene_both_out.txt")
+    result = phylo_wrk.make_trees("MLH1_gene_both.txt")
     stats.append([result["upgma_time"], result["upgma_confidence"], result["nj_time"], result["nj_confidence"]])
 
     # Test 5
-    result = phylo.make_trees("MLH1_protein_animals.txt", "MLH1_protein_animals_out.txt")
+    result = phylo_wrk.make_trees("MLH1_protein_animals.txt")
     stats.append([result["upgma_time"], result["upgma_confidence"], result["nj_time"], result["nj_confidence"]])
 
     # Test 6
-    result = phylo.make_trees("MLH1_protein_plants.txt", "MLH1_protein_plants_out.txt")
+    result = phylo_wrk.make_trees("MLH1_protein_plants.txt")
     stats.append([result["upgma_time"], result["upgma_confidence"], result["nj_time"], result["nj_confidence"]])
 
     # Test 7
-    result = phylo.make_trees("MLH1_protein_both.txt", "MLH1_protein_both_out.txt")
+    result = phylo_wrk.make_trees("MLH1_protein_both.txt")
     stats.append([result["upgma_time"], result["upgma_confidence"], result["nj_time"], result["nj_confidence"]])
 
     # Plot table of stats

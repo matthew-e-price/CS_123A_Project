@@ -1,21 +1,19 @@
 import time
-
 from Bio.Align.Applications import ClustalOmegaCommandline
 from Bio import AlignIO, Phylo
 from Bio.Phylo import Consensus, TreeConstruction
 from Bio.Phylo.TreeConstruction import DistanceCalculator, DistanceTreeConstructor
 from matplotlib import pyplot as plt
-import io
 
 # Set this to the absolute path of your clustalo.exe
-CLUSTAL_PATH = "C:/Users/price/PycharmProjects/CS_123A_Project/Clustal_Windows/clustalo.exe"
-TREES_MADE_PER_CONSENSUS = 5
+CLUSTAL_PATH = "C:/Users/price/PycharmProjects/CS_123A_Project/ClustalO/clustalo.exe"
+TREES_MADE_PER_CONSENSUS = 10
 
 
 # Perform MSA using Clustal Omega
 def perform_msa(input_file, output_file):
-    clustalomega_cline = ClustalOmegaCommandline(infile=input_file, outfile=output_file, verbose=True, auto=True,
-                                                 cmd=CLUSTAL_PATH, force=True)
+    clustalomega_cline = ClustalOmegaCommandline(infile=input_file, outfile=output_file, verbose=True,
+                                                 cmd=CLUSTAL_PATH, auto=True, force=True)
     stdout, stderr = clustalomega_cline()
 
 
@@ -101,7 +99,7 @@ def draw_tree(tree, file, algorithm="upgma"):
         raise ValueError("Unsupported algorithm. Please choose either 'upgma' or 'nj'.")
 
 
-def upgma_test_correct(distance_matrix, tree):
+def upgma_test_correct(tree):
     for a in tree.get_terminals():
         for b in tree.get_terminals():
             for c in tree.get_terminals():
@@ -110,18 +108,18 @@ def upgma_test_correct(distance_matrix, tree):
                                  round(tree.distance(b.name, c.name), 6),
                                  round(tree.distance(c.name, a.name), 6)]
                     for i in range(3):
-                        if distances[i] > max(distances[i-1], distances[i-2]):
+                        if distances[i] > max(distances[i - 1], distances[i - 2]):
                             return False
     return True
 
 
-def make_trees(input, output):
+def make_trees(input):
     # Replace 'input_sequences.fasta' with your actual input file containing the sequences
     input_sequences_file = "Sequences/" + input
-    aligned_sequences_file = "Alignments/" + output
+    aligned_sequences_file = "Alignments/" + input[:input.index(".txt")] + "_out.txt"
 
     # Step 1: Perform MSA
-    #perform_msa(input_sequences_file, aligned_sequences_file)
+    perform_msa(input_sequences_file, aligned_sequences_file)
 
     # Step 2: Calculate the distance matrix
     alignment = create_alignment(aligned_sequences_file)
@@ -134,7 +132,7 @@ def make_trees(input, output):
 
     upgma_tree = compare_to_bootstrap(upgma_tree, alignment, "upgma")
     print(distance_matrix)
-    print(upgma_test_correct(distance_matrix, upgma_tree))
+    print("\n\n\n")
 
     # Step 4: Construct the NJ tree
     nj_start = time.perf_counter()
@@ -153,4 +151,3 @@ def make_trees(input, output):
         "nj_confidence": average_confidence(nj_tree)
     }
     return stats_dic
-

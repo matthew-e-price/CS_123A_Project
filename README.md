@@ -8,6 +8,7 @@
 3) Fix the UPGMA bug by copying the code in TreeConstruction(FIXED).py into "Bio/Phylo/TreeConstruction"
     - In PyCharm, it's located at "venv/Lib/site-packages/Bio/Phylo/TreeConstruction"
     - You just need to copy and paste all the code
+    - Everything will work if you don't do this, but UPGMA trees won't be ultrametric and correct
 4) In phylo_main.py, provide the absolute path to ClustalO/clustalo.exe in the variable CLUSTAL_PATH
     - Make sure all instances of "\" are replaced with "/"
     - For example, "C:/Users/price/PycharmProjects/CS_123A_Project/ClustalO/clustalo.exe"
